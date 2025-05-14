@@ -1,0 +1,18 @@
+.ag-theme-alpine {
+    --ag-header-foreground-color: #fff;
+    --ag-header-background-color: #007e98;
+    --ag-background-color: #007e98;
+    --ag-foreground-color: #fff;
+    --ag-header-cell-hover-background-color: #007e98;
+
+    .ag-cell-focus {
+        border: none !important;
+    }
+
+    .ag-cell {
+        border: none !important;
+    }
+
+    /* Forzare la visibilità dell'icona del filtro */
+
+}

@@ -1,0 +1,49 @@
+
+<!-- 
+    4) Creiamo il nostro form e al suo interno utilizziamo il parametro [FormGroup] e come valore gli 
+    assegneremo la nostra variabile formTest create precendentemente nel TS 
+-->
+
+<div id="form-page" class="px-5 py-3">
+    <div>
+
+        <div class="btn-back">
+            <i class="fa-solid fa-arrow-left" title="TORNA ALLA PAGINA PRECEDENTE" routerLink="/"></i>
+        </div>
+
+        <h1>FORM GROUP PAGE</h1>
+    </div>
+    
+    <form [formGroup]="formTest" id="formTest">
+    
+        <!-- 5) per chiave del nostro form group creiamo un input, questo potrà fare l'associazione tramite il parametro formControlName -->
+        <div class="w-50 py-2">
+            <label for="" class="label">Nome</label>
+            <input class="form-control" type="text" formControlName="nome" placeholder="Nome"> 
+        </div>
+    
+        <div class="w-50 py-2">
+            <label for="" class="label">Cognome</label>
+            <input class="form-control" type="text" formControlName="cognome" placeholder="Cognome"> 
+        </div>
+    
+        <div class="w-50 py-2">
+            <label for="" class="label">Email Utente</label>
+            <input class="form-control" type="email" formControlName="email" placeholder="Email Utente"> 
+        </div>
+    
+        <div class="w-50 py-2">
+            <label for="" class="label">Codice Fiscale</label>
+            <input class="form-control" type="text" formControlName="codiceFiscale" placeholder="Codice Fiscale"> 
+        </div>
+    
+        <div class="w-50 py-2 d-flex flex-column">
+            <label for="" class="label">Info Extra</label>
+            <textarea name="" id="" cols="30" rows="10" formControlName="datiExtra" placeholder="Info Extra" class="form-control"></textarea>
+        </div>
+    
+        <!-- attacchiamo il metodo creato lato TS al nostro button -->
+        <button class="btn btn-success" (click)="creaUtenteConMessaggio()">Crea utente</button>
+    
+    </form>
+</div>

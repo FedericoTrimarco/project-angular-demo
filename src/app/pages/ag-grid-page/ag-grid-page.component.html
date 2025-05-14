@@ -1,0 +1,18 @@
+
+<div *ngIf="gridOptions" class="p-5">
+    <div>
+
+        <div class="btn-back">
+            <i class="fa-solid fa-arrow-left" title="TORNA ALLA PAGINA PRECEDENTE" routerLink="/"></i>
+        </div>
+
+        <h1>FORM GROUP PAGE</h1>
+    </div>
+    
+    <ag-grid-angular
+        [gridOptions]="gridOptions"
+        [rowData]="rowData"
+        class="ag-theme-alpine">
+    </ag-grid-angular>
+
+</div>
