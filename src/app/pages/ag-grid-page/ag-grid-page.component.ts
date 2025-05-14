@@ -114,6 +114,7 @@ export class AgGridPageComponent {
   ];
 
   constructor(
+    //Hook Function è una classe proveniente dalla libreria ng-trimagix al cui interno ci sono diverse fnzioni utilities per angular
     private hf: HookFunctions,
   ){
 
